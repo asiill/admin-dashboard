@@ -2,14 +2,10 @@
 
 :root {
     /* base font family */
-    --ff-base: "Roboto" sans-serif;
+    --ff-base: "Roboto", sans-serif;
 
     /* base font size */
-    --fs-base: 16px;
-
-    /* heading font sizes */
-    --fs-h1: ;
-    --fs-h3: ;
+    --fs-base: 12px;
 }
 
 * {
@@ -20,10 +16,8 @@
 
 body {
     height: 100vh;
-}
-
-ul {
-    list-style-type: none;
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
 }
 
 a {
@@ -45,6 +39,10 @@ button:hover {
     transform: scale(1.05);
 }
 
+ul {
+    list-style-type: none;
+}
+
 svg {
     width: 20px;
     height: 20px;
@@ -56,9 +54,6 @@ img {
 }
 
 .container {
-    font-family: var(--ff-base);
-    font-size: var(--fs-base);
-
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
@@ -124,7 +119,7 @@ img {
 
 .header {
     color: black;
-    background-color: dark-blue;
+    background-color: white;
 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -279,6 +274,10 @@ input[type="search"] {
 
 .update-item:hover, .trending-user:hover {
     transform: scale(1.05);
+}
+
+.update-item h3 {
+    padding-bottom: 5px;
 }
 
 .trending-user {
