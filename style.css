@@ -155,7 +155,7 @@ input[type="search"] {
     gap: 20px;
 }
 
-.user-name {
+.greeting {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 
@@ -181,6 +181,18 @@ input[type="search"] {
     padding: 5px;
     border: none;
     border-radius: 15px;
+}
+
+.header-logo {
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet; 
+    border-radius: 50%;
+}
+
+.greeting .header-logo {
+    width: 40px;
+    height: 40px;
 }
 
 /* ---------- Header styles end ---------- */
@@ -283,6 +295,27 @@ input[type="search"] {
 .trending-user {
     display: flex;
     align-items: center;
+}
+
+.robin-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 100%, #000000 40%, #f59323);
+}
+
+.raven-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 100%, #726161, #000000 40%, #ddd8d8 50%, #161616 75%);
+}
+
+.sparrow-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background:  radial-gradient(circle at 0%, #000000 40%, #f56623);
 }
 
 /* ---------- Content styles end ---------- */
