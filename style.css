@@ -6,6 +6,10 @@
 
     /* base font size */
     --fs-base: 12px;
+    
+    /* font colors */
+    --fc-red-brown: #501D24;
+    --fc-lt-pink: #FEEAFA;
 }
 
 * {
@@ -67,7 +71,7 @@ img {
 
 .sidebar {
     color: white;
-    background-color: blue;
+    background-color: var(--fc-red-brown);
 
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -79,6 +83,7 @@ img {
 }
 
 .sidebar a {
+    font-weight: bold;
     color: white;
 }
 
@@ -118,8 +123,10 @@ img {
 /* ---------- Header styles begin ---------- */
 
 .header {
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px 1px #00000033;
+    z-index: 1;
 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -140,7 +147,7 @@ img {
 }
 
 input[type="search"] {
-    background-color: #ecebeb;
+    background-color: var(--fc-lt-pink);
     width: 80%;
     padding: 3px;
     border-radius: 15px;
@@ -175,7 +182,7 @@ input[type="search"] {
 
 .header-btns button {
     color: white;
-    background-color: blue;
+    background-color: var(--fc-red-brown);
     font-weight: bold;
     width: 100px;
     padding: 5px;
@@ -186,7 +193,6 @@ input[type="search"] {
 .header-logo {
     width: 20px;
     height: 20px;
-    background-color: blueviolet; 
     border-radius: 50%;
 }
 
@@ -201,8 +207,8 @@ input[type="search"] {
 /* ---------- Content styles begin ---------- */
 
 .content {
-    color: black;
-    background-color: #ecebeb;
+    color: #000000;
+    background-color: var(--fc-lt-pink);
 
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -214,7 +220,7 @@ input[type="search"] {
 }
 
 .content a {
-    color: black;
+    color: #000000;
 }
 
 .projects-container {
@@ -250,8 +256,8 @@ input[type="search"] {
 }
 
 .project-item {
-    background-color: white;
-    border-left: 5px solid orange;
+    background-color: #ffffff;
+    border-left: 5px solid var(--fc-red-brown);
     border-radius: 5px;
     transition: transform .2s;
 
@@ -272,11 +278,11 @@ input[type="search"] {
 
 .project-btns button {
     border: none;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .updates, .trending {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 
@@ -295,6 +301,14 @@ input[type="search"] {
 .trending-user {
     display: flex;
     align-items: center;
+}
+
+.user-name p:first-child {
+    font-weight: bold;
+}
+
+.user-name p:last-child {
+    color:#383232;
 }
 
 .robin-logo {
